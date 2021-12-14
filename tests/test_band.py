@@ -17,7 +17,7 @@ def test_guitarist_str():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+
 def test_guitarist_repr():
     joan = Guitarist("Joan Jett")
     actual = repr(joan)
@@ -25,7 +25,7 @@ def test_guitarist_repr():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+
 def test_drummer_str():
     sheila = Drummer("Sheila E.")
     actual = str(sheila)
@@ -33,7 +33,7 @@ def test_drummer_str():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+
 def test_drummer_repr():
     sheila = Drummer("Sheila E.")
     actual = repr(sheila)
@@ -41,7 +41,7 @@ def test_drummer_repr():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+
 def test_bassist_str():
     meshell = Bassist("Meshell Ndegeocello")
     actual = str(meshell)
@@ -49,7 +49,7 @@ def test_bassist_str():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+
 def test_bassist_repr():
     meshell = Bassist("Meshell Ndegeocello")
     actual = repr(meshell)
@@ -57,35 +57,35 @@ def test_bassist_repr():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+
 def test_band_name():
     nirvana = Band("Nirvana", [])
 
     assert nirvana.name == "Nirvana"
 
 
-@pytest.mark.skip("todo")
+
 def test_guitarist():
     jimi = Guitarist("Jimi Hendrix")
     assert jimi.name == "Jimi Hendrix"
     assert jimi.get_instrument() == "guitar"
 
 
-@pytest.mark.skip("todo")
+
 def test_bassist():
     flea = Bassist("Flea")
     assert flea.name == "Flea"
     assert flea.get_instrument() == "bass"
 
 
-@pytest.mark.skip("todo")
+
 def test_drummer():
     ginger = Drummer("Ginger Baker")
     assert ginger.name == "Ginger Baker"
     assert ginger.get_instrument() == "drums"
 
 
-@pytest.mark.skip("todo")
+
 def test_instruments(one_band):
     instruments = ["guitar", "bass", "drums"]
     for i, member in enumerate(one_band.members):

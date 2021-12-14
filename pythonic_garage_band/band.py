@@ -14,8 +14,8 @@ class Band:
 
     def play_solos(self):
         solos = list(range(len(self.members)))
-        for idx, member in enumerate(self.members):
-            solos[idx] = member.play_solo()
+        for i, member in enumerate(self.members):
+            solos[i] = member.play_solo()
         
         return solos
 
